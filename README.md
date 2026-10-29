@@ -4,6 +4,8 @@
 
 **Tu standup diario en una sola página: una métrica, una ola, tus metas y un mini CRM. Con tu propia tarjeta de presentación pública.**
 
+> ¿Solo quieres la tarjeta de presentación, con QR, contacto para guardar y un asistente de IA? Está en su propio proyecto: [Digital Business Card](https://github.com/Morenazzo/digital-business-card).
+
 Lineup es un panel personal para quien construye algo solo (o casi). Cada mañana respondes un standup corto: con cuántas personas hablaste, cuánto es tu ingreso recurrente hoy, cómo está tu moral y cuáles son tus metas. El resto del día ves una ola que crece con tu número, tu racha, tus metas por marcar, gráficas y un pipeline de prospectos y clientes que arrastras de columna en columna.
 
 ![El panel de Lineup con datos de ejemplo](docs/dashboard.jpg)
