@@ -1,0 +1,239 @@
+/* The public card and the sign-in page. The dashboard (lib/lineup/lineup.html) has its own styles
+   and uses the same variable names, so lineup.config.ts (theme) recolors both. */
+:root {
+  color-scheme: dark;
+  --abyss: #001639;
+  --navy: #003453;
+  --foam: #0bb7b7;
+  --aqua: #19d7c7;
+  --sky: #009fd5;
+  --coral: #ed4a6d;
+  --sand: #ffd08d;
+  --mint: #6ae1cc;
+  --ink: #f5fdff;
+  --mute: #93aaba;
+  --line: rgba(140, 215, 230, 0.14);
+  --card: linear-gradient(155deg, rgba(6, 57, 83, 0.83), rgba(3, 34, 67, 0.94));
+  --f-display: "DM Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  background: var(--abyss);
+  color: var(--ink);
+}
+
+body {
+  min-height: 100dvh;
+  font: 16px/1.55 var(--f-display);
+  background:
+    radial-gradient(ellipse at 69% 0%, rgba(0, 111, 138, 0.21), transparent 45%),
+    linear-gradient(140deg, #001d3c, #001734 55%, #001a35) fixed,
+    var(--abyss);
+  padding-inline: 16px;
+}
+
+a {
+  color: var(--foam);
+  text-underline-offset: 3px;
+}
+
+:focus-visible {
+  outline: 2px solid var(--sand);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+.shell {
+  max-width: 720px;
+  margin: 0 auto;
+  padding-block: 48px 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.shell.narrow {
+  max-width: 400px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 16px 55px rgba(0, 9, 30, 0.21);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--foam);
+  font-weight: 800;
+}
+
+.hero {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.avatar {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--line);
+}
+
+.name {
+  font-size: clamp(28px, 6vw, 40px);
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  line-height: 1.1;
+  text-wrap: balance;
+}
+
+.headline {
+  color: var(--sand);
+  font-weight: 700;
+}
+
+.muted {
+  color: var(--mute);
+  font-size: 14px;
+}
+
+.concept {
+  font-size: clamp(18px, 3.4vw, 22px);
+  line-height: 1.45;
+  text-wrap: pretty;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.links a,
+.button {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(111, 201, 222, 0.25);
+  background: rgba(7, 59, 87, 0.7);
+  color: var(--ink);
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.links a:hover,
+.button:hover {
+  border-color: var(--foam);
+}
+
+.button.primary {
+  color: #002837;
+  background: linear-gradient(100deg, #14d0be, var(--mint));
+  border-color: transparent;
+}
+
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.timeline li {
+  padding-left: 14px;
+  border-left: 2px solid var(--foam);
+}
+
+.timeline b {
+  font-weight: 800;
+}
+
+.timeline .muted {
+  display: block;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  font-size: 13px;
+  color: var(--mute);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.field input {
+  min-height: 48px;
+  border-radius: 12px;
+  border: 1px solid rgba(148, 206, 224, 0.25);
+  background: rgba(0, 22, 49, 0.53);
+  color: var(--ink);
+  padding: 0 14px;
+  font: inherit;
+}
+
+.notice {
+  border-radius: 12px;
+  border: 1px solid rgba(237, 74, 109, 0.6);
+  background: rgba(237, 74, 109, 0.1);
+  padding: 12px 14px;
+  font-size: 14px;
+}
+
+.ok {
+  border-color: rgba(106, 225, 204, 0.4);
+  background: rgba(106, 225, 204, 0.08);
+}
+
+.submit {
+  min-height: 48px;
+  border-radius: 999px;
+  border: 0;
+  color: #002837;
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+  background: linear-gradient(100deg, #14d0be, var(--mint));
+}
+
+.submit:disabled {
+  opacity: 0.6;
+}

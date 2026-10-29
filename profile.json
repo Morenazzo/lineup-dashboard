@@ -1,0 +1,32 @@
+{
+  "name": "Tu Nombre",
+  "headline": "Fundador de Mi Proyecto",
+  "concept": "Una frase sobre qué construyes y para quién. Es lo primero que ve quien abre tu tarjeta.",
+  "location": "Ciudad, País",
+  "avatar": "",
+  "links": [
+    { "label": "GitHub", "url": "https://github.com/tu-usuario" },
+    { "label": "LinkedIn", "url": "https://www.linkedin.com/in/tu-usuario" },
+    { "label": "Correo", "url": "mailto:hola@example.com" }
+  ],
+  "resume": {
+    "summary": "Dos o tres líneas sobre tu trayectoria. Si prefieres, deja esto vacío y usa solo la lista de abajo.",
+    "downloadUrl": "",
+    "items": [
+      {
+        "title": "Cargo o proyecto",
+        "org": "Organización",
+        "period": "2024 - hoy",
+        "note": "Un logro concreto o algo que aprendiste.",
+        "url": ""
+      },
+      {
+        "title": "Otro cargo o proyecto",
+        "org": "Otra organización",
+        "period": "2021 - 2024",
+        "note": "",
+        "url": ""
+      }
+    ]
+  }
+}

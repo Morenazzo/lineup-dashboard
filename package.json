@@ -1,0 +1,39 @@
+{
+  "name": "lineup",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Lineup: un standup diario con MRR, moral, metas y un mini CRM, mas una tarjeta de presentacion publica. Open source.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit",
+    "check:dashes": "tsx scripts/check-dashes.ts",
+    "check": "npm run check:dashes && npm run lint && npm run typecheck",
+    "test": "tsx --test --test-reporter=spec \"tests/unit/**/*.test.ts\" \"tests/db/**/*.test.ts\""
+  },
+  "dependencies": {
+    "@openrouter/ai-sdk-provider": "^2.10.0",
+    "@supabase/ssr": "^0.12.7",
+    "@supabase/supabase-js": "^2.117.2",
+    "ai": "^6.0.300",
+    "next": "16.2.6",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.5.8",
+    "@types/node": "^22",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.6",
+    "tsx": "^4.23.15",
+    "typescript": "^5"
+  }
+}
