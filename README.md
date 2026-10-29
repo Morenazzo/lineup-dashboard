@@ -1,4 +1,6 @@
-# Lineup
+# Digital Business Card
+
+*Lineup: tu panel diario y tu tarjeta de presentación digital, en un solo proyecto open source.*
 
 **Tu standup diario en una sola página: una métrica, una ola, tus metas y un mini CRM. Con tu propia tarjeta de presentación pública.**
 
